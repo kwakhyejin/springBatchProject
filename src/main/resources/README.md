@@ -21,3 +21,11 @@
    4. 실행
       1. Edit Configuration... > Program arguments > --spring.batch.job.names=ValidatedParamJob -fileName=test.csv 입력
       2. 실행. validate 검증 로직 확인
+
+- 3강
+1. 배치 작업 실행 전, 후 로그 추가를 위한 리스너
+   1.  JobLoggerListener 클래스 생성
+      1. JobExecutionListener implements 하기
+      2. beforeJob, afterJob 오버라이드 하기
+      3. beforeJob => 로그 찍기 / 
+      4. afterJob => 로그 찍기 / 실패시 로그 찍어주기=> 실제로 실패시 메신저나 이메일을 보내줄수 있음.
