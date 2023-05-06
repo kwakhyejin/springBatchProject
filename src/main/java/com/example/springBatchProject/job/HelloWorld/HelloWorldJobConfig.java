@@ -1,4 +1,4 @@
-package com.example.springBatchProject.job;
+package com.example.springBatchProject.job.HelloWorld;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
@@ -15,6 +15,11 @@ import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+/*
+*  desc : Hello World 를 출력
+*  run : --spring.batch.job.names=helloWorldJob
+* */
 
 @Configuration
 @RequiredArgsConstructor
