@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /*
-*  desc : Hello World 를 출력
+*  desc : job validate , listener 
 *  run : --spring.batch.job.names=jobListnerJob
 * */
 
