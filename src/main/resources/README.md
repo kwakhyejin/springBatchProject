@@ -32,3 +32,8 @@
       2. beforeJob, afterJob 오버라이드 하기
       3. beforeJob => 로그 찍기 / 
       4. afterJob => 로그 찍기 / 실패시 로그 찍어주기=> 실제로 실패시 메신저나 이메일을 보내줄수 있음.
+
+- 4강
+1. DB 데이터 이관 하기( DB 데이터 읽고 쓰기)
+   1. RepositoryWriterBuilder 이용하여 데이터 저장
+   2. ItemWriter 직접 jpa 메서드 호출하여 저장

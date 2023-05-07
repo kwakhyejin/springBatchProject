@@ -1,6 +1,5 @@
 package com.example.springBatchProject.job.JobListener;
 
-import javafx.concurrent.Task;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -56,9 +55,9 @@ public class JobListenerConfig {
         return new Tasklet() {
             @Override
             public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-//                System.out.println("job Listener Tasklet");
-//                return RepeatStatus.FINISHED;
-                throw new Exception("Failed!!!!");// => jobListener에서 실패 분기문으로 들어가기 위한 Exception
+                System.out.println("job Listener Tasklet");
+                return RepeatStatus.FINISHED;
+//                throw new Exception("Failed!!!!");// => jobListener에서 실패 분기문으로 들어가기 위한 Exception
             }
         };
     }
