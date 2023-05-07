@@ -1,6 +1,9 @@
   mysql  - 8.0.11
   java - 1.8
   spring - 2.7.11
+  
+깃헙 주소 : https://github.com/junngo/spring-batch-tutorial
+
   - 1강
 1. 일단 실행 - Hello, World(스프링 배치 구조 익히기)
    1. start.spring.io 프로젝트 생성

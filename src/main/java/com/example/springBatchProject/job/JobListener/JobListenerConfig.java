@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /*
-*  desc : job validate , listener 
+*  desc : job validate , listener
 *  run : --spring.batch.job.names=jobListnerJob
 * */
 
