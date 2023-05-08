@@ -37,3 +37,22 @@
 1. DB 데이터 이관 하기( DB 데이터 읽고 쓰기)
    1. RepositoryWriterBuilder 이용하여 데이터 저장
    2. ItemWriter 직접 jpa 메서드 호출하여 저장
+
+- 5강
+1. 배치 작업의 기본, 파일 읽기와 쓰기
+   1. 샘플 데이터 만들기 ( csv 파일 )  
+      1. 참고 데이터 => https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html#simpleDelimitedFileReadingExample > #Simple Delimited File Reading Example
+      2. Players.csv 파일 만들어 복사 붙어넣기 
+      3. Player Dto 만들기 > class Player => 롬복 어노테이션 @Data 를 이용하여 getter,setter,toString까지 생성될수 있음
+      4. PlayerDataReadWriteConfig 클래스 만들기
+         1. job만들기 (fileReadWriteJob)
+         2. step 만들기 (fileReadWriteStep)
+         3. reader 만들기 (playItemReader)
+            1. resource 메서드 => path가 기본이 루트로 잡혀 있음.
+            2. fieldSetMapper메서드 => PlayerFieldSetMapper 클래스 생성하기
+            3. linesToSkip(1) => csv파일에 첫번째 줄은 설명이기때문에 스킵
+            4. reader로 잘 읽어오는지 확인후에 writer를 하는것이 좋음 (System.out.println)
+         4. processor 만들기 
+            1. experienceYear 만들기
+         5. Writer 만들기 => 새로운 파일 만들기 ( Player-output.csv )
+* FieldExtractor 부분 읽기
