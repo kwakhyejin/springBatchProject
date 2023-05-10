@@ -42,7 +42,7 @@
 1. 배치 작업의 기본, 파일 읽기와 쓰기
    1. 샘플 데이터 만들기 ( csv 파일 )  
       1. 참고 데이터 => https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html#simpleDelimitedFileReadingExample > #Simple Delimited File Reading Example
-      2. Players.csv 파일 만들어 복사 붙어넣기 
+`     2. Players.csv 파일 만들어 복사 붙어넣기 
       3. Player Dto 만들기 > class Player => 롬복 어노테이션 @Data 를 이용하여 getter,setter,toString까지 생성될수 있음
       4. PlayerDataReadWriteConfig 클래스 만들기
          1. job만들기 (fileReadWriteJob)
@@ -56,3 +56,12 @@
             1. experienceYear 만들기
          5. Writer 만들기 => 새로운 파일 만들기 ( Player-output.csv )
 * FieldExtractor 부분 읽기
+
+- 6강
+1. 여러개의 step 구동 및 실행 상태에 따른 분기처리
+   1. 여러개의 step을 단계 별로 구현 => MultipleStepJobConfig
+   2. step 내에서 다음 step 으로 데이터를 전달 ExecutionContext 이용
+   3. step 실행시 분기 처리 => ConditionalStepJobConfig
+
+
+*** 강의 다 듣고 나면 처음부터 다시 듣고 정리해서 블로그 옮기기
